@@ -5,7 +5,7 @@
 # Site
 title: 臭臭前端路上爬
 subtitle:
-description: 我本微末凡尘，可也心向天空
+description: 我本微末凡尘，可也心向天空!
 keywords:
 author: Sue
 language: zh-Hans
@@ -24,6 +24,7 @@ public_dir: public
 tag_dir: tags
 archive_dir: archives
 category_dir: categories
+production_dir: production
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
@@ -77,6 +78,8 @@ theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-type: git
+
+deploy:
+  type: git
   repo: git@github.com:suemuamuamua/suemuamuamua.github.io.git
   branch: master
