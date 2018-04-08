@@ -4,8 +4,8 @@ date: 2018-04-04 15:12:02
 ---
 <div style="width: 100%;
 height: 300px;">
-  <img src="./01.jpg" style="float: left;width: 30%;height: 100%;border: none;">
-  <div style="float: left;width: 70%;height: 100%; box-sizing: border-box;padding-left: 30px;">
+  <img src="./me.png" style="float: left;width: 55%;height: 100%;border: none;">
+  <div style="float: left;width: 45%;height: 100%; box-sizing: border-box;padding-left: 30px;">
     <span>姓名：苏臭臭</span>
     <span>年龄：24</span>
     <span>职业：前端小萌新</span>
