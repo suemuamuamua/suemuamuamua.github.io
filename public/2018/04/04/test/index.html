@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="test">
+<meta name="description" content="1.数组赋值问题12345var arr = [];arr[0] = 0;arr[1] = 1;arr.foo = &apos;foo&apos;;console.log(arr.length);//2 原本以为控制台会报错或者输出为3，打印输出arr的值为[0,1,foo:’foo’]。了解到length返回的是数组的数字索引长度，故arr.length为2。 2.闭包问题1234567891011function">
 <meta property="og:type" content="article">
-<meta property="og:title" content="test">
+<meta property="og:title" content="牛客网刷题错误集锦">
 <meta property="og:url" content="http://yoursite.com/2018/04/04/test/index.html">
 <meta property="og:site_name" content="臭臭前端路上爬">
-<meta property="og:description" content="test">
+<meta property="og:description" content="1.数组赋值问题12345var arr = [];arr[0] = 0;arr[1] = 1;arr.foo = &apos;foo&apos;;console.log(arr.length);//2 原本以为控制台会报错或者输出为3，打印输出arr的值为[0,1,foo:’foo’]。了解到length返回的是数组的数字索引长度，故arr.length为2。 2.闭包问题1234567891011function">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-04T07:07:21.976Z">
+<meta property="og:updated_time" content="2018-04-08T09:55:38.473Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="test">
-<meta name="twitter:description" content="test">
+<meta name="twitter:title" content="牛客网刷题错误集锦">
+<meta name="twitter:description" content="1.数组赋值问题12345var arr = [];arr[0] = 0;arr[1] = 1;arr.foo = &apos;foo&apos;;console.log(arr.length);//2 原本以为控制台会报错或者输出为3，打印输出arr的值为[0,1,foo:’foo’]。了解到length返回的是数组的数字索引长度，故arr.length为2。 2.闭包问题1234567891011function">
 
 
 
@@ -125,7 +125,7 @@
 
 
 
-  <title>test | 臭臭前端路上爬</title>
+  <title>牛客网刷题错误集锦 | 臭臭前端路上爬</title>
   
 
 
@@ -289,7 +289,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">test</h1>
+          <h1 class="post-title" itemprop="name headline">牛客网刷题错误集锦</h1>
         
 
         <div class="post-meta">
@@ -339,7 +339,11 @@
       
 
       
-        <p>test</p>
+        <p>1.数组赋值问题<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [];</span><br><span class="line">arr[<span class="number">0</span>] = <span class="number">0</span>;</span><br><span class="line">arr[<span class="number">1</span>] = <span class="number">1</span>;</span><br><span class="line">arr.foo = <span class="string">'foo'</span>;</span><br><span class="line"><span class="built_in">console</span>.log(arr.length);<span class="comment">//2</span></span><br></pre></td></tr></table></figure></p>
+<p>原本以为控制台会报错或者输出为3，打印输出arr的值为[0,1,foo:’foo’]。了解到length返回的是数组的数字索引长度，故arr.length为2。</p>
+<p>2.闭包问题<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> i = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(i++);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> f1 = foo();<span class="comment">//var i=0</span></span><br><span class="line"><span class="keyword">var</span> f2 = foo();<span class="comment">//再一次var i=0</span></span><br><span class="line">f1(); <span class="comment">//0</span></span><br><span class="line">f1(); <span class="comment">//1</span></span><br><span class="line">f2(); <span class="comment">//0</span></span><br></pre></td></tr></table></figure></p>
+<p>函数定义有两种方式，第一种是function name() {},另外一种是var name = function() {},此处定义f1、f2时默认采取的第二种。<br>出错问题在于f1、f2为两个不同的函数，f1、f2第一次执行的时候局部作用域没有i变量，故向上级作用域找i变量，所以f1、f2中i的初始值均为0。<br>同类的问题还有：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f1</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">　　　　<span class="keyword">var</span> n=<span class="number">999</span>;</span><br><span class="line">　　　　nAdd=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;n+=<span class="number">1</span>&#125;</span><br><span class="line">　　　　<span class="function"><span class="keyword">function</span> <span class="title">f2</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">　　　　　　alert(n);</span><br><span class="line">　　　　&#125;</span><br><span class="line">　　　　<span class="keyword">return</span> f2;</span><br><span class="line">　　&#125;</span><br><span class="line">　　<span class="keyword">var</span> result=f1();</span><br><span class="line">　　result(); <span class="comment">// 999</span></span><br><span class="line">　　nAdd();</span><br><span class="line">　　result(); <span class="comment">// 1000</span></span><br></pre></td></tr></table></figure></p>
+<p>nAdd为全局函数，但同时赋值在f1内部，故可以访问堆中的n值，result赋值为f1返回的f2，当运行result()时会直接从堆中获取到n的值</p>
 
       
     </div>
