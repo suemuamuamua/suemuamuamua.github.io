@@ -13,6 +13,10 @@ date: 2018-04-04 15:56:43
 3.驼队司机微信公众号订单查询（数据敏感，不便链接）
 <center><img src="./order-search.png" style="width: 40%;height: 500px;"></center>
 <h3>练手demo集合</h3>
-1.[react打造的图片展览](http://smelly.xyz/memory/build/)    (源码地址：https://github.com/suemuamuamua/memory)
+1.[react打造的图片展览（慕课网）](http://smelly.xyz/memory/build/)    (源码地址：https://github.com/suemuamuamua/memory)
 <center><img src="./gallery.png" style="width: 90%;"></center>
+2.[七夕快乐（慕课网）](http://smelly.xyz/love-qixi)    (源码地址：https://github.com/suemuamuamua/love-qixi)
+<center><img src="./qixi.png" style="width: 90%;"></center>
+3.[lovely fish小游戏](http://smelly.xyz/lovely-fish)    (源码地址：https://github.com/suemuamuamua/lovely-fish)
+<center><img src="./lovelyfish.png" style="width: 90%;"></center>
 
