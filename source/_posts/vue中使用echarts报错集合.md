@@ -1,9 +1,11 @@
 ---
-title: 'vue中使用echarts报错集合
+title: vue中使用echarts报错集合
 date: 2018-04-24 11:45:52
 tags:
 ---
-1. Uncaught TypeError: Cannot read property ''getAttribute'' of null'
+第一次着手系统项目，遇到很多问题，尤其是关于vue中使用echarts报错Uncaught TypeError: Cannot read property 'getAttribute' of null
+<!-- more -->
+1. Uncaught TypeError: Cannot read property 'getAttribute' of null
   在vue中使用echarts时报错Uncaught TypeError: Cannot read property “getAttribute” of null。问题出在echarts.init(document.getElementById('idName')),获取该元素时为空，应该在页面加载完成后再获取。
   即绘制图标的函数应该在mouted()钩子函数中，而不是created()中。
 
