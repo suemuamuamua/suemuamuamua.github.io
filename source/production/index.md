@@ -20,4 +20,6 @@ date: 2018-04-04 15:56:43
 <center><img src="./qixi.png" style="width: 90%;"></center>
 3. [lovely fish小游戏](http://smelly.xyz/lovely-fish/index.html)    (源码地址：https://github.com/suemuamuamua/lovely-fish)
 <center><img src="./lovelyfish.png" style="width: 90%;"></center>
+4. [flybirdweb 小游戏](http://smelly.xyz/flybirdweb/index.html)    (源码地址：https://github.com/suemuamuamua/flybirdweb)
+<center><img src="./flybirdweb.png" style="width: 40%;"></center>
 
