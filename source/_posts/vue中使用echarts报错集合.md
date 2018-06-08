@@ -1,7 +1,9 @@
 ---
 title: vue中使用echarts报错集合
 date: 2018-04-24 11:45:52
-tags:
+tags: 
+      --vue
+categories: JavaScript
 ---
 第一次着手系统项目，遇到很多问题，尤其是关于vue中使用echarts报错Uncaught TypeError: Cannot read property 'getAttribute' of null
 <!-- more -->
